@@ -9,3 +9,10 @@ class Neuron:
     
     def predict(self,x ):
         return self.weight * x + self.bias
+    
+
+    def learn(self, x, actual, prediction):
+        error = actual - prediction
+
+        self.weight += error * 0.01
+        self.bias += error * 0.01
