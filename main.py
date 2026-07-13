@@ -1,21 +1,6 @@
-"""
-Chapter 1 - Can a Computer Learn y = 2x?
+from neuron import Neuron
+from loss import calculate_loss
 
-Bro: I know the answer.
-Computer: Then tell me.
-Bro: Nope. You learn it.
-
-Let's see what happens.
-"""
-
-
-print("Bro: Okay computer, here is your first challenge.")
-print("Computer: Please tell me you are giving me more than zero information.")
-print("Bro: Nope. Just examples.")
-print()
-
-
-# Training examples
 training_data = [
     (1, 2),
     (2, 4),
@@ -24,16 +9,27 @@ training_data = [
     (5, 10)
 ]
 
-
-print("Bro: These are your examples:")
-print()
+print("Training Data")
 
 for x, y in training_data:
-    print(f"Input: {x}  ->  Expected Output: {y}")
+    print(f"Input: {x} -> Expected Output: {y}")
 
 
-print()
+neuron = Neuron()
 
-print("Computer: Hmm...")
-print("Computer: I see numbers, but I have absolutely no idea what they mean.")
-print("Bro: Perfect. That means we can start learning.")
+print("\nInitial neuron state:")
+print(f"Weight: {neuron.weight:.2f}")
+print(f"Bias: {neuron.bias:.2f}")
+
+print("\nPredictions:")
+
+for x, y in training_data:
+    prediction = neuron.predict(x)
+    loss = calculate_loss(prediction, y)
+
+    print(
+        f"Input: {x}, "
+        f"Prediction: {prediction:.2f}, "
+        f"Actual: {y}, "
+        f"Loss: {loss:.2f}"
+    )
