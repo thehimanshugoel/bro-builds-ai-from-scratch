@@ -177,13 +177,15 @@ python main.py
 
 **Computer:** What problem?
 
-**Bro:** You don't know why you improved or which direction you should move.
+**Bro:** You improved, but you don't really know the best way to learn.
 
-**Computer:** Ahhh man... so there is more math?
+**Computer:** Wait... I was just guessing?
 
-**Bro:** Yep.
+**Bro:** Kind of.
 
-**Computer:** I knew this was too easy.
+**Computer:** Ahhh man... so I got lucky?
+
+**Bro:** Not exactly. But we can make you smarter.
 
 ---
 
@@ -198,18 +200,16 @@ The neuron can:
 - Compare the prediction with the real answer
 - Adjust itself to improve
 
-But our learning method was very basic.
+But our learning method was very simple.
 
-The computer could improve, but it didn't really understand:
+The computer improved, but there is a smarter way to learn.
 
-- How much it should change
-- Which direction it should move
-- Why some changes improve the result
+In the next chapter, we will teach the computer a better method to reduce mistakes.
 
 Next chapter:
 
-**Chapter 2 - How does a neuron know which direction to move?**
+**Chapter 2 - How does a neuron learn better?**
 
-We introduce the idea that powers modern neural networks:
+We discover the idea behind training modern neural networks:
 
 **Gradient Descent**
