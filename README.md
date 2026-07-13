@@ -189,6 +189,58 @@ python main.py
 
 ---
 
+## But how did the computer improve?
+
+**Computer:** Bro, wait.
+
+**Bro:** What?
+
+**Computer:** I have a question.
+
+**Bro:** Go ahead.
+
+**Computer:** You told me to make predictions, check my mistakes, and improve.
+
+**Bro:** Yes.
+
+**Computer:** But how did I know what to change?
+
+**Bro:** Good question.
+
+**Computer:** Did I know the correct answer?
+
+**Bro:** No.
+
+**Computer:** Did I know the formula?
+
+**Bro:** No.
+
+**Computer:** Then how did I improve?
+
+**Bro:** For now, you are using a very simple learning method.
+
+**Computer:** Meaning?
+
+**Bro:** When you make a mistake, you slightly adjust your internal numbers and try again.
+
+**Computer:** So I am basically making a small correction every time?
+
+**Bro:** Exactly.
+
+**Computer:** Hmm... that sounds a little like guessing.
+
+**Bro:** It is a very basic form of learning.
+
+**Computer:** Ahhh man... so I learned, but I don't actually know the best way to learn?
+
+**Bro:** Exactly.
+
+**Computer:** That's annoying.
+
+**Bro:** Good. Now you are ready for the next chapter.
+
+---
+
 ## What we learned
 
 In this chapter, we built a tiny neuron completely from scratch.
