@@ -132,3 +132,84 @@ Then we can proudly tell it:
 **Bro:** You were literally useless five minutes ago.
 
 **Computer:** I prefer the term "untrained".
+
+---
+
+## Run it
+
+```
+python main.py
+```
+
+## The Result
+
+**Computer:** Bro... I think I figured it out.
+
+**Bro:** Really?
+
+**Computer:** I started with random guesses, but now my predictions are much closer.
+
+**Bro:** Nice. Did you discover the exact answer?
+
+**Computer:** Not exactly.
+
+**Bro:** Why not?
+
+**Computer:** I kept trying to improve, but at some point I couldn't get any closer.
+
+**Bro:** Interesting.
+
+**Computer:** So... I failed?
+
+**Bro:** No. You learned something.
+
+**Computer:** But I didn't get the perfect answer.
+
+**Bro:** Learning is not always about getting everything perfect. It's about improving from where you started.
+
+**Computer:** So I went from knowing nothing to finding the pattern?
+
+**Bro:** Exactly.
+
+**Computer:** Not bad for my first day.
+
+**Bro:** Not bad. But there is still a problem.
+
+**Computer:** What problem?
+
+**Bro:** You don't know why you improved or which direction you should move.
+
+**Computer:** Ahhh man... so there is more math?
+
+**Bro:** Yep.
+
+**Computer:** I knew this was too easy.
+
+---
+
+## What we learned
+
+In this chapter, we built a tiny neuron completely from scratch.
+
+The neuron can:
+
+- Take an input
+- Make a prediction
+- Compare the prediction with the real answer
+- Adjust itself to improve
+
+But our learning method was very basic.
+
+The computer could improve, but it didn't really understand:
+
+- How much it should change
+- Which direction it should move
+- Why some changes improve the result
+
+Next chapter:
+
+**Chapter 2 - How does a neuron know which direction to move?**
+
+We introduce the idea that powers modern neural networks:
+
+**Gradient Descent**
