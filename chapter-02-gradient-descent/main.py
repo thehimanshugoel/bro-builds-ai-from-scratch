@@ -42,7 +42,10 @@ for epoch in range(100):
 
     if epoch % 10 == 0:
         print(
-            f"Epoch {epoch}, Loss: {total_loss:.2f}"
+            f"Epoch {epoch:3} | "
+            f"Loss: {total_loss:.2f} | "
+            f"Weight: {neuron.weight:.2f} | "
+            f"Bias: {neuron.bias:.2f}"
         )
 
 
