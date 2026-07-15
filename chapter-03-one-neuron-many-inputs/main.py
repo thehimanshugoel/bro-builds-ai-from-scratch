@@ -2,60 +2,47 @@ from neuron import Neuron
 from loss import calculate_loss
 
 
+# Training data:
+# [Experience, Education] -> Salary
 training_data = [
-    (1, 2),
-    (2, 4),
-    (3, 6),
-    (4, 8),
-    (5, 10)
+    ([2, 1], 5),
+    ([4, 2], 10),
+    ([6, 3], 15),
+    ([8, 4], 20),
 ]
 
 
-print("Training data:")
+print("Training Data\n")
 
-for x, y in training_data:
-    print(f"{x} -> {y}")
+for inputs, actual in training_data:
+    print(f"{inputs} -> {actual}")
 
 
 neuron = Neuron()
 
 
-print("\nInitial neuron:")
-print(f"Weight: {neuron.weight:.2f}")
+print("\nInitial Neuron")
+print(f"Weights: {neuron.weights}")
 print(f"Bias: {neuron.bias:.2f}")
 
 
-for epoch in range(100):
+print("\nPredictions\n")
 
-    total_loss = 0
+for inputs, actual in training_data:
 
-    for x, y in training_data:
+    prediction = neuron.predict(inputs)
 
-        prediction = neuron.predict(x)
+    loss = calculate_loss(prediction, actual)
 
-        loss = calculate_loss(prediction, y)
-
-        total_loss += loss
-
-        neuron.learn(x, y, prediction)
-
-
-    if epoch % 10 == 0:
-        print(
-            f"Epoch {epoch:3} | "
-            f"Loss: {total_loss:.2f} | "
-            f"Weight: {neuron.weight:.2f} | "
-            f"Bias: {neuron.bias:.2f}"
-        )
+    print(f"Inputs     : {inputs}")
+    print(f"Prediction : {prediction:.2f}")
+    print(f"Actual     : {actual}")
+    print(f"Loss       : {loss:.2f}")
+    print("-" * 35)
 
 
-print("\nFinal model:")
-print(f"y = {neuron.weight:.2f}x + {neuron.bias:.2f}")
+test_input = [10, 5]
 
-
-test_input = 10
-
-print(
-    f"\nPrediction for {test_input}: "
-    f"{neuron.predict(test_input):.2f}"
-)
+print("\nTest Prediction")
+print(f"Input: {test_input}")
+print(f"Prediction: {neuron.predict(test_input):.2f}")
