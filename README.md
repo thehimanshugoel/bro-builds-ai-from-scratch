@@ -8,4 +8,4 @@ Bro teaches a computer AI concepts step by step, one chapter at a time. Each cha
 
 - [Chapter 1 - Can a Computer Learn y = 2x?](chapter-01-neuron-learns-y-2x/README.md)
 - [Chapter 2 - How Does a Neuron Learn Better?](chapter-02-gradient-descent/README.md)
-- [Chapter 3 - One Neuron, Many Inputs (in progress)](chapter-03-one-neuron-many-inputs/)
+- [Chapter 3 - One Neuron, Many Inputs](chapter-03-one-neuron-many-inputs/README.md)
